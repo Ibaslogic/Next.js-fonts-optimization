@@ -1,5 +1,7 @@
 # Next.js font optimization: Adding custom and Google fonts
 
+## [Live project here](https://next-js-fonts-optimization.vercel.app/)
+
 Read the step-by-step guide here: ""
 
 ## Clone project
