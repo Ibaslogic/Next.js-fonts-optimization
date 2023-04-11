@@ -2,7 +2,7 @@
 
 ## [Live project here](https://next-js-fonts-optimization.vercel.app/)
 
-Read the step-by-step guide here: ""
+Read the step-by-step guide here: "https://blog.logrocket.com/next-js-font-optimization/"
 
 ## Clone project
 
