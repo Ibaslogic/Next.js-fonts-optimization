@@ -1,31 +1,14 @@
 import '../styles/globals.css';
 
-import {
-  Raleway,
-  IBM_Plex_Sans,
-  Antonio,
-  // Dancing_Script,
-  // Oswald,
-  // Merriweather,
-} from '@next/font/google';
-import localFont from '@next/font/local';
-
-// const dancingScript = Dancing_Script({
-//   subsets: ['latin'],
-// });
-
-// const oswald = Oswald({ subsets: ['latin'] });
-// const merriweather = Merriweather({
-//   weight: ['300', '400', '700'],
-//   style: ['normal', 'italic'],
-//   subsets: ['latin'],
-// });
+import { Raleway, IBM_Plex_Sans, Antonio } from 'next/font/google';
+import localFont from 'next/font/local';
 
 const raleway = Raleway({ subsets: ['latin'] });
 const ibmSans = IBM_Plex_Sans({
   weight: '700',
   subsets: ['latin'],
 });
+
 const antonio = Antonio({
   subsets: ['latin'],
   variable: '--antonio-font',
@@ -62,7 +45,3 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp;
-
-/* --oswald-font: ${oswald.style.fontFamily};
-          --merriweather-font: ${merriweather.style.fontFamily};
-          --dancingScript-font: ${dancingScript.style.fontFamily}; */
