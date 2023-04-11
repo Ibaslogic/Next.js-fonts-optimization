@@ -11,7 +11,9 @@ h1 {
   font-size: 30px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--ibmSans-font);
   margin-bottom: 15px;
 }

@@ -4,22 +4,22 @@ import {
   Raleway,
   IBM_Plex_Sans,
   Antonio,
-  Dancing_Script,
-  Oswald,
-  Merriweather,
+  // Dancing_Script,
+  // Oswald,
+  // Merriweather,
 } from '@next/font/google';
 import localFont from '@next/font/local';
 
-const dancingScript = Dancing_Script({
-  subsets: ['latin'],
-});
+// const dancingScript = Dancing_Script({
+//   subsets: ['latin'],
+// });
 
-const oswald = Oswald({ subsets: ['latin'] });
-const merriweather = Merriweather({
-  weight: ['300', '400', '700'],
-  style: ['normal', 'italic'],
-  subsets: ['latin'],
-});
+// const oswald = Oswald({ subsets: ['latin'] });
+// const merriweather = Merriweather({
+//   weight: ['300', '400', '700'],
+//   style: ['normal', 'italic'],
+//   subsets: ['latin'],
+// });
 
 const raleway = Raleway({ subsets: ['latin'] });
 const ibmSans = IBM_Plex_Sans({
@@ -52,12 +52,9 @@ function MyApp({ Component, pageProps }) {
           --raleway-font: ${raleway.style.fontFamily};
           --ibmSans-font: ${ibmSans.style.fontFamily};
           --cooper-font: ${cooper.style.fontFamily};
-          --oswald-font: ${oswald.style.fontFamily};
-          --merriweather-font: ${merriweather.style.fontFamily};
-          --dancingScript-font: ${dancingScript.style.fontFamily};
         }
       `}</style>
-      <div className={antonio.variable}>
+      <div className={`${antonio.variable} font-cooper`}>
         <Component {...pageProps} />
       </div>
     </>
@@ -65,3 +62,7 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp;
+
+/* --oswald-font: ${oswald.style.fontFamily};
+          --merriweather-font: ${merriweather.style.fontFamily};
+          --dancingScript-font: ${dancingScript.style.fontFamily}; */
